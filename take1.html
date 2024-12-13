@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBIF - Global Biodiversity Information Facility</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="https://cdn.glitch.global/23227eb6-8289-4711-a864-3dfda12b18f0/37a7ddf4fb45411b1854.jpg?v=1734108030495" 
+                 alt="GBIF Logo" 
+                 width="150" 
+                 height="auto">
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                   <li><a href="#">IDENTIFY PLANTS</a></li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dữ liệu</a></li>
+                    <li><a href="#">Công cụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm dữ liệu..." />
+            <button>Tìm kiếm</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Global Biodiversity Information Facility</h1>
+            <p>Kết nối con người với dữ liệu đa dạng sinh học toàn cầu</p>
+            <a href="#" class="cta-btn">Tìm hiểu thêm</a>
+        </div>
+    </section>
+
+    <!-- Giới thiệu Section với Video Link -->
+    <section class="about intro-section">
+        <div class="about-content">
+            <h2>Giới thiệu</h2>
+            <p>Trong bối cảnh toàn cầu hóa và biến đổi khí hậu hiện nay, việc bảo vệ và duy trì đa dạng sinh học đã trở thành một vấn đề cấp bách và nan giải. Các loài thực vật có vai trò vô cùng quan trọng trong sự phát triển của hệ sinh thái. Đứng trước nhiều rủi ro thách thức, sự xâm lấn của các loài ngoại lai, biến đổi khí hậu hay nguy cơ bị tuyệt chủng, việc nhận diện và theo dõi các loài thực vật không chỉ giúp bảo tồn đa dạng các loài sinh vật học mà còn giúp duy trì sự cân bằng của hệ sinh thái, hỗ trợ nghiên cứu khoa học và sự phát triển của nông – lâm nghiệp.</p>
+            <p>Nhận diện thực vật không chỉ giúp hỗ trợ bảo tồn mà còn giúp cải thiện năng suất trong nông nghiệp, cung cấp công cụ học tập hữu ích, nâng cao hiểu biết và nhận thức của cộng đồng về tầm quan trọng của đa dạng sinh học.</p>
+        </div>
+
+        <!-- Liên kết Video giới thiệu -->
+        <div class="video-link">
+            <h3>Xem video giới thiệu</h3>
+            <p><a href="https://www.example.com/intro-video.mp4" target="_blank">Nhấp vào đây để xem video giới thiệu về đa dạng sinh học</a></p>
+        </div>
+    </section>
+
+<!-- Phần đăng nhập và tạo tài khoản -->
+<section class="auth">
+    <div class="auth-btn-container">
+        <!-- Nút đăng nhập -->
+        <button onclick="showLoginForm()">Đăng nhập</button>
+        <!-- Nút tạo tài khoản -->
+        <button onclick="showSignupForm()">Tạo tài khoản</button>
+    </div>
+
+    <!-- Form đăng nhập -->
+    <div class="auth-container" style="display: none;">
+        <button class="close-btn" onclick="closeForm()">X</button>
+        <h2>Đăng nhập</h2>
+        <form action="#" method="POST" class="auth-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <p class="switch-form">Chưa có tài khoản? <a href="#" onclick="showSignupForm()">Tạo tài khoản</a></p>
+    </div>
+
+    <!-- Form tạo tài khoản -->
+    <div class="signup-container" style="display: none;">
+        <button class="close-btn" onclick="closeForm()">X</button>
+        <h2>Tạo tài khoản</h2>
+        <form action="#" method="POST" class="auth-form">
+            <label for="signup-name">Họ và tên:</label>
+            <input type="text" id="signup-name" name="name" placeholder="Nhập họ và tên" required>
+
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" placeholder="Nhập email" required>
+
+            <label for="signup-password">Mật khẩu:</label>
+            <input type="password" id="signup-password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <label for="signup-confirm-password">Xác nhận mật khẩu:</label>
+            <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Xác nhận mật khẩu" required>
+
+            <button type="submit">Tạo tài khoản</button>
+        </form>
+        <p class="switch-form">Đã có tài khoản? <a href="#" onclick="showLoginForm()">Đăng nhập</a></p>
+    </div>
+</section>
+
+
+    <!-- Key Sections -->
+    <section class="key-sections">
+        <div class="section">
+            <h2>Tiếp cận Dữ liệu</h2>
+            <p>Truy cập hàng triệu hồ sơ về đa dạng sinh học từ khắp nơi trên thế giới.</p>
+        </div>
+        <div class="section">
+            <h2>Hợp tác</h2>
+            <p>Cộng tác với những người khác trong nghiên cứu và bảo tồn đa dạng sinh học.</p>
+        </div>
+        <div class="section">
+            <h2>Công cụ và Dịch vụ</h2>
+            <p>Sử dụng các công cụ của chúng tôi để phân tích và trực quan hóa dữ liệu đa dạng sinh học.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 GBIF. Tất cả các quyền được bảo lưu.</p>
+        <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function showSignupForm() {
+            document.querySelector('.auth-container').style.display = 'none';
+            document.querySelector('.signup-container').style.display = 'block';
+        }
+
+        function showLoginForm() {
+            document.querySelector('.signup-container').style.display = 'none';
+            document.querySelector('.auth-container').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
